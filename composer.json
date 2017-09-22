@@ -1,0 +1,33 @@
+{
+    "name": "equipc/laravel-flash",
+    "description": "Easy Flash Messages for Your Laravel App",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michel LAURENT",
+            "email": "michel.laurent@equipc.net"
+        }
+    ],
+    "require": {
+        "php": ">=7.1"
+    },
+    "autoload": {
+        "psr-0": {
+            "EquiPC\\Flash": "src/"
+        },
+        "files": [
+            "src/EquiPC/Flash/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "EquiPC\\Flash\\FlashServiceProvider"
+            ],
+            "aliases": {
+                "Flash": "EquiPC\\Flash\\Flash"
+            }
+        }
+    }
+
+}
